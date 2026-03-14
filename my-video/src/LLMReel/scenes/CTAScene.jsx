@@ -5,7 +5,7 @@ import {
   interpolate,
   Audio,
 } from 'remotion';
-import { vineBoom, ding, whoosh } from '@remotion/sfx';
+import { ding, whoosh } from '@remotion/sfx';
 import { GradientText } from '../components/GlowText';
 import { ParticleField } from '../components/ParticleField';
 import { GRADIENTS } from '../constants';
@@ -139,7 +139,6 @@ export const CTAScene = () => {
         </p>
       </div>
 
-      <Audio src={vineBoom} startFrom={0} volume={0.6} />
       <Audio src={whoosh} startFrom={30} volume={0.4} />
       <Audio src={ding} startFrom={55} volume={0.5} />
       <Audio src={ding} startFrom={75} volume={0.45} />

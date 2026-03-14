@@ -5,7 +5,7 @@ import {
   interpolate,
   Audio,
 } from 'remotion';
-import { vineBoom, whoosh, ding } from '@remotion/sfx';
+import { whoosh, ding } from '@remotion/sfx';
 import { GradientText } from '../components/GlowText';
 import { NeuralNetwork } from '../components/NeuralNetwork';
 import { ParticleField } from '../components/ParticleField';
@@ -122,7 +122,6 @@ export const FutureScene = () => {
         })}
       </div>
 
-      <Audio src={vineBoom} startFrom={0} volume={0.5} />
       <Audio src={whoosh} startFrom={5} volume={0.4} />
       {FUTURE_ITEMS.map((_, i) => (
         <Audio key={i} src={ding} startFrom={30 + i * 22} endAt={40 + i * 22} volume={0.35} />

@@ -5,7 +5,7 @@ import {
   interpolate,
   Audio,
 } from 'remotion';
-import { vineBoom, ding } from '@remotion/sfx';
+import { ding } from '@remotion/sfx';
 import { ParticleField } from '../components/ParticleField';
 import { NeuralNetwork } from '../components/NeuralNetwork';
 import { GlowText, GradientText } from '../components/GlowText';
@@ -168,7 +168,6 @@ export const HookScene = () => {
       </div>
 
       {/* Audio */}
-      <Audio src={vineBoom} startFrom={0} volume={0.7} />
       <Audio src={ding} startFrom={0} endAt={40} volume={0.4} />
     </div>
   );
